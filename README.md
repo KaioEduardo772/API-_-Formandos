@@ -55,7 +55,7 @@ JDBC URL: jdbc:h2:file:~/formandos
 User: sa
 Password: (vazio)
 
-## Estrutura do Banco
+● Estrutura do Banco
 
 - Aluno: informações do aluno (nome, matrícula, situação, data de ingresso, curso)
 
@@ -63,7 +63,7 @@ Password: (vazio)
 
 - Campus: nome do campus
 
-## Endpoints
+● Endpoints
 
 - GET /alunos – lista todos os alunos
 - GET /cursos – lista todos os cursos
@@ -72,7 +72,7 @@ Password: (vazio)
 - PUT /alunos/{id} – atualiza aluno existente
 - DELETE /alunos/{id} – remove aluno
 
-## GitFlow
+● GitFlow
 
 • Branches utilizadas:
 
