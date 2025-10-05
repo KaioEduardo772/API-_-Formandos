@@ -41,3 +41,46 @@ Possui um seeder que preenche automaticamente o banco de dados com informações
 ```bash
 git clone git@github.com:JoaoPedroAmaral/formandos-api.git
 cd formandos-api
+
+2. Build e rodar a aplicação:
+
+mvn clean install
+mvn spring-boot:run
+
+3. Acesse o H2 Console:
+
+http://localhost:8080/h2-console
+
+JDBC URL: jdbc:h2:file:~/formandos
+User: sa
+Password: (vazio)
+
+## Estrutura do Banco
+
+- Aluno: informações do aluno (nome, matrícula, situação, data de ingresso, curso)
+
+- Curso: nome, modalidade e campus
+
+- Campus: nome do campus
+
+## Endpoints
+
+- GET /alunos – lista todos os alunos
+- GET /cursos – lista todos os cursos
+- GET /campi – lista todos os campi
+- POST /alunos – cadastra novo aluno
+- PUT /alunos/{id} – atualiza aluno existente
+- DELETE /alunos/{id} – remove aluno
+
+## GitFlow
+
+• Branches utilizadas:
+
+- test – desenvolvimento inicial e testes rápidos.
+- homol – homologação e integração.
+- main – produção.
+
+• Regras sugeridas:
+
+- Todos os Merge Requests devem ser aprovados antes do merge.
+- Proteger branches homol e main para evitar pushes diretos.
